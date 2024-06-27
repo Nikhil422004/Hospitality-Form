@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    font-family: "Merriweather", serif;
+}
+
+body {
+    background: url("./background.png") no-repeat center center/cover;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    padding: 1% 5%;
+    line-height: 200%;
+}
+
+li {
+    margin: 5% 0;
+}
+
+h1.TC {
+    margin-bottom: 0;
+    margin-top: 20%;
+}
+
+h1.GI {
+    margin-top: 10%;
+    margin-bottom: 0;
+}
+
+#ATC {
+    width: 1rem;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+a {
+    color: rgb(190, 187, 187);
+}
+
+.TCbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+.container {
+    font-weight: 100;
+    display: block;
+    max-width: 600px;
+    min-height: 97vh;
+    overflow: auto;
+    border: 3px solid whitesmoke;
+    border-radius: 15px;
+    background-color: rgba(42, 42, 42, 0.3);
+    color: white;
+
+}
+
+.container:hover {
+    background-color: rgba(42, 42, 42, 0.6);
+    transition: background-color 3ms ease-in-out;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+label {
+    font-size: 1.25rem;
+    margin: 1% 1%;
+    padding: 1%;
+}
+
+.field {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+select {
+    margin: 3% 1%;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: white;
+    border: none;
+    width: 12rem;
+}
+
+input,
+select option {
+    margin: 3% 1%;
+    padding: 1.25% 2%;
+    background-color: white;
+    height: 1.25rem;
+    border-radius: 5px;
+    border: none;
+    width: 12rem;
+}
+
+#Name,
+#Ph {
+    width: 13rem;
+}
+
+#Gender label {
+    display: block;
+    padding: 0%;
+    height: auto;
+    width: auto;
+}
+
+#checkin,
+#checkout {
+    display: inline-block;
+    margin-left: 1.5%;
+    width: auto;
+}
+
+.removePerson,
+#addPersonButton {
+    padding: 1% 1%;
+    margin: 1% 2%;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: white;
+    opacity: 0.8;
+}
+
+.removePerson:hover,
+#addPersonButton:hover {
+    opacity: 1;
+}
+
+#submitButton {
+    display: block;
+    width: 40%;
+    padding: 2% 1%;
+    margin: 5% auto;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 3rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    border: 2px solid white;
+
+}
+
+#submitButton:hover {
+    background: linear-gradient(99.74deg, #06DBAC 5.2%, #BD00FF 92.7%);
+    transition: all 5s ease;
+
+}
+
+@media (max-width: 620px) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    label,
+    select,
+    input,
+    select option,
+    #Name,
+    #Gender label,
+    #checkin,
+    #checkout,
+    .removePerson,
+    #addPersonButton {
+        transform: scale(0.75);
+        transform-origin: top;
+        font-size: 1.25rem;
+    }
+
+    .TCbox input {
+        margin: 0 2%;
+        width: 20% !important;
+    }
+
+    p {
+        padding: 0 2%;
+        margin: 0;
+        font-size: 75%;
+    }
+
+    label {
+        font-size: 1rem;
+        margin-right: 0;
+    }
+
+    #Ph {
+
+        width: 20rem;
+    }
+
+    select {
+        width: 14rem;
+    }
+
+
+    #submitButton {
+        transform: scale(0.8);
+        width: 15rem;
+    }
+}
