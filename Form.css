@@ -50,7 +50,6 @@ a {
 
 .container {
     font-weight: 100;
-    display: block;
     max-width: 600px;
     min-height: 97vh;
     overflow: auto;
@@ -86,6 +85,7 @@ label {
 
 select {
     margin: 3% 1%;
+    padding: 1%;
     height: 2rem;
     border-radius: 5px;
     background-color: white;
@@ -93,8 +93,7 @@ select {
     width: 12rem;
 }
 
-input,
-select option {
+input {
     margin: 3% 1%;
     padding: 1.25% 2%;
     background-color: white;
@@ -102,25 +101,6 @@ select option {
     border-radius: 5px;
     border: none;
     width: 12rem;
-}
-
-#Name,
-#Ph {
-    width: 13rem;
-}
-
-#Gender label {
-    display: block;
-    padding: 0%;
-    height: auto;
-    width: auto;
-}
-
-#checkin,
-#checkout {
-    display: inline-block;
-    margin-left: 1.5%;
-    width: auto;
 }
 
 .removePerson,
@@ -165,21 +145,6 @@ select option {
         font-size: 2rem;
     }
 
-    label,
-    select,
-    input,
-    select option,
-    #Name,
-    #Gender label,
-    #checkin,
-    #checkout,
-    .removePerson,
-    #addPersonButton {
-        transform: scale(0.75);
-        transform-origin: top;
-        font-size: 1.25rem;
-    }
-
     .TCbox input {
         margin: 0 2%;
         width: 20% !important;
@@ -191,20 +156,19 @@ select option {
         font-size: 75%;
     }
 
+    li {
+        padding-right: 2%;
+    }
+
+    .field {
+        margin-left: 2%;
+        margin-bottom: 5%;
+    }
+
     label {
         font-size: 1rem;
         margin-right: 0;
     }
-
-    #Ph {
-
-        width: 20rem;
-    }
-
-    select {
-        width: 14rem;
-    }
-
 
     #submitButton {
         transform: scale(0.8);
